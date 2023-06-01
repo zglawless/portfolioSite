@@ -7,20 +7,20 @@ body{
 
 .topnav {
     background: none;
-    overflow: hidden;
+    overflow: auto;
+    display:block;
 
   }
   
   /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
+  .topnav a, .topnav p {
     color: #f2f2f2;
-    text-align: right;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
-    border-radius: 40%;
   }
+
+
   
   /* Change the color of links on hover */
   .topnav a:hover {
@@ -32,4 +32,46 @@ body{
   .topnav a.active {
     background-color: #ddd;
     color: black;
+  }
+
+  .topnav-right{
+    width:33.33%;
+    min-height:100%;
+    float:left;
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+  }
+  .topnav-center{
+    width: 33.33%;
+    float:left;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+
+  }
+
+  .topnav-left {
+    width:33.33%;
+    float:left;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-height: 100%;
+    position:relative;
+  }
+
+  .topnav img{
+    width: 25%;
+  }
+
+  .topnav:after {
+    content: "";
+    display: table;
+    clear: both;
   }
