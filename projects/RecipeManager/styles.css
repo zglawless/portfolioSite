@@ -1,0 +1,136 @@
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    height: 100%;
+    padding: 5%;
+    margin: 4rem auto;
+    justify-content: center;
+    align-items: center;
+    background-color: ghostwhite;
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+     }
+    }
+
+.custom_div
+{
+
+    border-radius: 15px;
+    margin: 5%;
+    text-align: center;
+    --img-scale: 1.001;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    background-color: white;
+    
+}
+.image-style{
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  margin-bottom: 20%;
+
+}
+
+h1
+{
+    text-align: center;
+    color: antiquewhite;
+}
+
+#inputForm{
+    border: 3px solid lightgrey;
+    width: 75%;
+    margin: auto;
+    border-radius: 25px;
+    
+}
+
+#recipeForm{
+    padding: 5%;
+}
+
+nav {
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+
+.image-style img{
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn-grp {
+    height: 20px;
+}
+.custom_div button {
+    text-align: center;
+    height: 100%;
+    margin: 2%;
+    border: 0;
+    border-radius: 10px;
+}
+
+p {
+    font-family: comic sans ms, cursive;
+}
+
+#recipe-container{
+    text-align: center;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#recipe-image{
+    width: 40%;
+    height: 40%;
+    border-radius: 15px;
+}
+
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 50%;
+  }
+
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+
+#jumbo {
+    background-color: dodgerblue;
+    padding: 5%;
+    color: white;
+
+}
+
+#recipe-container{
+    background-color:lavender;
+    color:darkgrey;
+}
+
+#foot{
+    margin-top: 5%;
+}
+
+#recipeImg{
+    background-color: aliceblue;
+    padding-bottom: 5%;
+    padding-top:2%;
+}

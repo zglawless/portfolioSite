@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+    
+    <body>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Recipe Manager</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right" style="align-items: right;">
+            <li ><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">Add Recipe</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+          <div id = "inputForm">
+          <form action = " " method = "post" id = "recipeForm" name ="recipeForm">
+            <div class="form-group">
+              <label for="recipeName">Recipe Name</label>
+              <input type="text" class="form-control" id="recipeName" placeholder="Recipe Name" name = "recipeName">
+            </div>
+
+            <label for="easy">Select the recipe difficulty</label>
+            <br>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="easy" value="Easy"> Easy
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="medium" value="Medium"> Medium
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="hard" value="Hard"> Hard
+            </label>
+
+            <br>
+            <br>
+
+            <div class="form-group">
+              <label for="serves">Serves</label>
+              <input type="text" class="form-control" id="serves" placeholder="ex. 5" name = "serves">
+              
+            </div>
+
+            <div class="form-group">
+              <label for="prep">Preparation Time</label>
+              <input type="text" class="form-control" id="prep" placeholder="ex. 30 minutes" name ="prep">
+            </div>
+
+            <div class="form-group">
+              <label for="cook">Cook Time</label>
+              <input type="text" class="form-control" id="cook" placeholder="ex. 2 hours" name ="cook">
+            </div>
+
+            <label>Ingredients</label>
+            <div class="form-inline" id = "ings">
+              <input type = text class="form-control ingss" id="ings0" name = "ingredient">
+              <button class="btn btn-primary" type = "button" value="Add" onclick = "add:addIngredient();">Add</button>
+            </div>
+
+            <label>Instructions</label>
+            <div class="form-group" id = "insts">
+                <textarea class="form-control" id="insts0" rows="1" name = "instruction"></textarea>
+                <button class="btn btn-primary" type = "button" value="Add" onclick = "add:addInstruction();">Add</button>
+            </div>
+
+            <p>Upload an Image For Your Recipe</p>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="recipePicture" value="Upload Image">
+            <br>
+            <br>
+            
+            <input  class="btn btn-success" type = "button" value="Submit" onclick="addRecipe()">
+          </form>
+        </div>
+
+        <footer class="bg-light text-center text-lg-start" id = "foot">
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark">YourRecipeManager.com</a>
+          </div>
+        </footer>
+
+    <script type = "text/javascript" src="display.js"></script>
+    <script type = "text/javascript" src="add.js"></script>
+    <script type = "text/javascript" src="recipe.js"></script>
+    </body>
+</html>

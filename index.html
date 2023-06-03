@@ -8,6 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="form.css">
     </head>
     <body>
         <div class = "topnav">
@@ -19,24 +20,62 @@
             </div>
             <div class ="topnav-right">
                 <div class="links">
-                <a href="#about">about()</a>
-                <a href="#contact">contact()</a>
-                <a href="#resume">resume()</a>
+                <a href="#about">about</a>
+                <a href="#contact">contact</a>
+                <a id = "resume" href="#resume">resume</a>
             </div>
             </div>
         </div>
 
             <section id = "about">
                 <div id = "about-info">
-                    <h1>Hi, I'm Zak. A web devloper. </h1>
-                    <a href="projects">View my work</a>
+                    <h1>Hi, I'm Zak. A web developer. </h1>
+                    <a href="#projects">View my work</a>
                 </div>
             </section>>
             <section id = "projects">
-                <p>Stuff</p>
+                <div class = "row">
+                    <div class = "column-pic">
+                        <img src="images/recipe.PNG" href = "projects/RecipeManager/index.html">
+                    </div>
+                    <div class = "column">
+                        <div class = "info-column">
+                            <h1>Technologies</h1>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>Bootstrap</p>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class = "info-column">
+                            <h1>Description</h1>
+                            <p>A recipe management site that allows you to edit, create, and delete your own personal recipes recipes.</p>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class = "row">
+                </div>
             </section>
-            <section id = "contact">
 
+            <section id = "contact">
+                <h1>Contact Me!</h1>
+                <div class="container">
+                    <form action="action_page.php">
+                  
+                      <label for="fname">Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                      <label for="lname">Email</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your email..">
+                  
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Submit">
+                  
+                    </form>
+                  </div>
             </section>        
         <script src="" async defer></script>
     </body>

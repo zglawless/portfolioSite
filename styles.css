@@ -1,9 +1,13 @@
-body{
-    background-image: url('images/b.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
+  body{
+      background-image: url('images/b.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
 
 
 .topnav {
@@ -11,14 +15,25 @@ body{
     overflow: auto;
     height: 100%;
     display: flex;
+    border-bottom: 1px solid #f2f2f2;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
     color: #f2f2f2;
-    padding: 14px 16px;
+    padding: 2px 12px 5px 12px;
     text-decoration: none;
     font-size: 30px;
+    margin: 0 8px 0 8px;
+  }
+  h1{
+    color: #f2f2f2;
+    font-size: 40px;
+  }
+
+  p{
+    color: #f2f2f2;
+    font-size: 25px;
   }
 
   .topnav p{
@@ -52,7 +67,9 @@ body{
   .topnav-right{
     width:40%;
     float:left;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
   }
   .topnav-center{
@@ -64,9 +81,11 @@ body{
   .topnav-left {
     width:40%;
     float:left;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     position: relative;
     display: flex;
+    text-align: center;
   }
 
   .topnav img{
@@ -111,6 +130,51 @@ body{
 
   #about-info{
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .row{
+    width: 100%;
+    height: 50%;
+  }
+
+  .column-pic{
+    width: 30%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+  }
+  .column{
+    width: 70%;
+    height: 100%;
+    float: left;
+    text-align: center;
+  }
+
+  .column-pic img{
+   width: auto;
+   height: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 5%;
+  }
+
+  .info-column{
+    width: 45%;
+    float: left;
+  }
+
+  #resume{
+    border:2px solid #f2f2f2;
+    border-radius: 10%;
+  }
+
+  #contact{
     display: flex;
     justify-content: center;
     align-items: center;
