@@ -1,5 +1,5 @@
 
-input[type=text], select, textarea {
+input[type=text], input[type=email],select, textarea {
     width: 100%; 
     padding: 12px; 
     border: 1px solid #ccc; 
@@ -13,6 +13,10 @@ input[type=text], select, textarea {
   label{
     color:#f2f2f2;
     font-size: 25px;
+  }
+
+  input, textarea{
+    color: #f2f2f2;
   }
   
  
@@ -40,4 +44,9 @@ input[type=text], select, textarea {
 
   form{
     text-align: center;
+  }
+
+  #contact h1{
+    margin: 0 0;
+    padding: 4%;
   }

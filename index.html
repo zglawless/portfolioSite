@@ -6,37 +6,29 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Zachary Lawless</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="form.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     </head>
     <body>
-        <div class = "topnav">
-            <div class = "topnav-left">
-                <p>Zachary Lawless</p>
-            </div>
-            <div class = "topnav-center">
-                <img src="images/logo.svg" alt="logo">
-            </div>
-            <div class ="topnav-right">
-                <div class="links">
-                <a href="#about">about</a>
-                <a href="#contact">contact</a>
-                <a id = "resume" href="#resume">resume</a>
-            </div>
-            </div>
-        </div>
-
             <section id = "about">
                 <div id = "about-info">
-                    <h1>Hi, I'm Zak. A web developer. </h1>
-                    <a href="#projects">View my work</a>
+                    <h1>Hi, I'm Zak. A Web Developer. </h1>
+                    <a class ="button" href="#projects">View my work</a>
+                    <a class = "button" href="images/resume.pdf" target="_blank">Resume</a>
+                    <div class = "icons">
+                        <a class="fa fa-github click"style="font-size: 300%;" href="https://github.com/zglawless" target="_blank"></a>
+                        <a class="fa fa-linkedin-square click"style="font-size: 300%;" href="https://www.linkedin.com/in/zachary-lawless-2926b7279/"target="_blank"></a>
+                        <a class='fa fa-envelope-square click' style="font-size: 300%;" href = "mailto:zakglawless@gmail.com?subject = Feedback&body = Message"></a>
+                    </div>
                 </div>
             </section>>
             <section id = "projects">
+                <h1>Projects</h1>
                 <div class = "row">
                     <div class = "column-pic">
-                        <img src="images/recipe.PNG" href = "projects/RecipeManager/index.html">
+                        <a href = "projects/RecipeManager/index.html" target = "_blank" ><img src="images/recipe.PNG" alt ="Recipe Manager" ></a>
                     </div>
                     <div class = "column">
                         <div class = "info-column">
@@ -48,26 +40,48 @@
                         </div>
                         <div class = "info-column">
                             <h1>Description</h1>
-                            <p>A recipe management site that allows you to edit, create, and delete your own personal recipes recipes.</p>
+                            <p>A recipe management site that allows you to edit, create, and delete your own personal recipes.</p>
                         </div>
-                        
-                        
+                    </div>
+                    <div class = "row">
+
                     </div>
                 </div>
-                <div class = "row">
+            </section>
+
+            <section id = "end">
+                <h1>Skills</h1>
+                <div id = "skills">
+                <div class = "icons">
+                    <img class = "icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                    <img class = "icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                    <img class = "icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
                 </div>
+                <div class = "icons">
+                    <img class = "icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                    <img class = "icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                    <img class = "icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                </div>
+            </div>
+
+                <h1>Education</h1>
+                <h2>DMACC</h2>
+                <h3>AAS - Computer Information Systems</h3>
+
+
             </section>
 
             <section id = "contact">
                 <h1>Contact Me!</h1>
                 <div class="container">
-                    <form action="action_page.php">
+                    <form action="action.php">
                   
-                      <label for="fname">Name</label>
-                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" placeholder="Your name..">
                   
-                      <label for="lname">Email</label>
-                      <input type="text" id="lname" name="lastname" placeholder="Your email..">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="Your email..">
+                      <br>
                   
                       <label for="subject">Subject</label>
                       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
@@ -77,6 +91,6 @@
                     </form>
                   </div>
             </section>        
-        <script src="" async defer></script>
+            
     </body>
 </html>
