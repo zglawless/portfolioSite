@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['Email'])) {
+if (isset($_POST['submit'])) {
 
     // EDIT THE FOLLOWING TWO LINES:
     $email_to = "zakglawless@gmail.com";
@@ -46,13 +46,11 @@ if (isset($_POST['Email'])) {
     $headers = 'From: ' . $email . "\r\n" .
         'Reply-To: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
-    mail($email_to, $email_subject, $email_message, $headers);
-?>
 
-    <!-- INCLUDE YOUR SUCCESS MESSAGE BELOW -->
-
-    Thanks for getting in touch. I'll get back to you soon.
-
-<?php
+    if(mail($email_to, $email_subject, $email_message, $headers)){
+        echo "Thanks! I will get back to you soon";
+    } else{
+        echo "Sorry something went wrong...";
+    }
 }
 ?>
