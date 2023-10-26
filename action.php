@@ -1,7 +1,5 @@
 <?php
 if (isset($_POST['submit'])) {
-
-    // EDIT THE FOLLOWING TWO LINES:
     $email_to = "zakglawless@gmail.com";
     $email_subject = "Website Contact Form";
 
@@ -42,15 +40,13 @@ if (isset($_POST['submit'])) {
     $email_message .= "Email: " . clean_string($email) . "\n";
     $email_message .= "Message: " . clean_string($message) . "\n";
 
-    // create email headers
     $headers = 'From: ' . $email . "\r\n" .
         'Reply-To: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
-    if(mail($email_to, $email_subject, $email_message, $headers)){
-        echo "Thanks! I will get back to you soon";
-    } else{
-        echo "Sorry something went wrong...";
-    }
+    mail($email_to, $email_subject, $email_message, $headers);
+    header("Location:index.html");
+
+
 }
 ?>
